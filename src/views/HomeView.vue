@@ -1,9 +1,12 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
+
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <Header></Header>
+  
+  <Footer></Footer>
 </template>
+
+<script setup>
+import Footer from './../components/FooterComponent.vue'
+import Header from './../components/HeaderComponent.vue'
+</script>
