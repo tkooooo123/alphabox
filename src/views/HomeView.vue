@@ -3,7 +3,7 @@
 <template>
   <Header></Header>
   <div
-    class="lg:bg-home lg:bg-center bg-cover  bg-gradient-to-b from-primary-300 to-primary-600 lg:to-primary-300 h-full w-full">
+    class="lg:bg-[url('../assets/images/home_background.png')] lg:bg-center bg-cover  bg-gradient-to-b from-primary-300 to-primary-600 lg:to-primary-300 h-full w-full">
     <div class="container max-w-pc-2xl lg:flex lg:flex-row-reverse justify-between lg:py-14 py-7">
       <p class=" w-full lg:w-[416px] border-white border-t py-1">ALPHABOX+ STUDIO</p>
       <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/week8-ai/circle.png?raw=true"
@@ -69,7 +69,7 @@
   <!-- test-->
   <div class="relative lg:py-[492.5px] py-[343.5px]">
     <div class="bg-radial absolute w-full top-[-104px] z-0">
-      <div class="bg-caro lg:py-[544.5px] py-[395.5px] bg-cover lg:w-1/2 ">
+      <div class="bg-[url('../assets/images/carousel_background.png')] lg:py-[544.5px] py-[395.5px] bg-cover lg:w-1/2 ">
       </div>
       <div class="absolute top-0 left-0 right-0">
         <div class="container lg:max-w-pc-2xl">
