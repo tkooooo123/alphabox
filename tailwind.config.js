@@ -27,10 +27,23 @@ module.exports = {
         10: ["40px", "1.5"],
         11: ["44px", "1.5"],
         12: ["48px", "1.5"],
+        16: ["64px", "1.5"],
+        20: ["80px", "1.5"]
       },
       fontFamily: {
         sans: ["Noto Sans TC, sans-serif"],
-        shrik: ["Shrikhand, cursive"]
+        shrik: ["Shrikhand, cursive"],
+        saira: ["Saira Extra Condensed, sans-serif"],
+      },
+      backgroundImage: {
+        'home': "url('./src/assets/images/home_background.png')",
+        'caro': "url('./src/assets/images/carousel_background.png')"
+      },
+      maxWidth: {
+        "pc-2xl": "1320px",
+      },
+      padding: {
+        15: "60px",
       }
     },
   },
