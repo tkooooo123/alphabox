@@ -1,7 +1,7 @@
 <template>
     <header class="bg-primary-200 text-white py-3 relative border-b border-white">
         <nav class="container flex items-center justify-between relative lg:max-w-[1296px]">
-            <h1 class="text-6 lg:text-8 font-shrik" @click="openMenu">
+            <h1 class="text-6 lg:text-8 font-shrik">
                 <RouterLink to="/">ALPHABOX+</RouterLink>
             </h1>
             <ul class="hidden text-white items-center gap-10 lg:flex ">
@@ -37,7 +37,7 @@
             </div>
         </nav>
     </header>
-    <ul class=" flex-col items-center justify-center fixed w-full pt-6 pb-8  bg-gradient-to-b from-primary-300 to-primary-600 z-10"
+    <ul class=" flex-col items-center justify-center absolute w-full pt-6 pb-8  bg-gradient-to-b from-primary-300 to-primary-600 z-10"
         :class="isOpen ? 'flex' : 'hidden'">
         <li class="py-2" v-for=" item in toggler" :key="item.title"> {{ item.title }}</li>
         <li class="pt-1">
