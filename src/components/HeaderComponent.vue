@@ -9,7 +9,9 @@
                     <RouterLink to="">產品</RouterLink>
                 </li>
                 <li class="font-medium">關於我們</li>
-                <li class="font-medium">最新消息</li>
+                <li class="font-medium">
+                    <RouterLink to="/news">最新消息</RouterLink>
+                </li>
                 <li class="font-medium"><RouterLink to="/faq">FAQ</RouterLink></li>
                 <li class="font-medium">聯絡我們</li>
             </ul>
