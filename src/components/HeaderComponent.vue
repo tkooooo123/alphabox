@@ -2,13 +2,15 @@
     <header class="bg-primary-200 text-white py-3 relative border-b border-white">
         <nav class="container flex items-center justify-between relative lg:max-w-[1296px]">
             <h1 class="text-6 lg:text-8 font-shrik" @click="openMenu">
-                ALPHABOX+
+                <RouterLink to="/">ALPHABOX+</RouterLink>
             </h1>
             <ul class="hidden text-white items-center gap-10 lg:flex ">
-                <li class="font-medium">產品</li>
+                <li class="font-medium">
+                    <RouterLink to="">產品</RouterLink>
+                </li>
                 <li class="font-medium">關於我們</li>
                 <li class="font-medium">最新消息</li>
-                <li class="font-medium">FAQ</li>
+                <li class="font-medium"><RouterLink to="/faq">FAQ</RouterLink></li>
                 <li class="font-medium">聯絡我們</li>
             </ul>
 
@@ -33,7 +35,7 @@
             </div>
         </nav>
     </header>
-    <ul class=" flex-col items-center justify-center fixed w-full pt-6 pb-8  bg-gradient-to-b from-primary-300 to-primary-600"
+    <ul class=" flex-col items-center justify-center fixed w-full pt-6 pb-8  bg-gradient-to-b from-primary-300 to-primary-600 z-10"
         :class="isOpen ? 'flex' : 'hidden'">
         <li class="py-2" v-for=" item in toggler" :key="item.title"> {{ item.title }}</li>
         <li class="pt-1">
@@ -49,6 +51,7 @@
 
 <script setup>
 import { ref } from 'vue';
+import { RouterLink } from 'vue-router';
 const toggler = ref([
     {
         title: "產品",
